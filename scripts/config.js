@@ -1,5 +1,6 @@
 angular.module("bookApp")
 
+// just in case to start using in-app routing url's
 config(function($routeProvider) {
 
 	$routeProvider
