@@ -2,7 +2,10 @@
 
 AngularJS app using directives
 
-Directives are camel-case for 'listBooks' we tag as <list-books></list-books>
+Directives are camel-case for 'listBooks' we tag as
+```html
+<list-books></list-books>
+```
 
 Make sure the ng-click binded functions get the correct variables. So, the controllers can do a proper job.
 
