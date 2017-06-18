@@ -1,6 +1,6 @@
-# Book store
+# Bookstore (AngularJs, Bootstrap)
 
-AngularJS app using directives
+AngularJS app using directives. 
 
 Front-app test image:
 
