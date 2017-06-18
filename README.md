@@ -2,6 +2,11 @@
 
 AngularJS app using directives
 
+Front-app test image:
+
+![Front app](https://github.com/Avilardell/bookstore/tree/master/assets/front-app.jpg "Fron app test")
+
+
 Directives are camel-case for 'listBooks' we tag as
 ```html
 <list-books></list-books>
