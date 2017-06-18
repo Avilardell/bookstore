@@ -6,6 +6,9 @@ Front-app test image:
 
 ![Front app](https://github.com/Avilardell/bookstore/blob/master/assets/front-app.jpg?raw=true "Front app test")
 
+You not only can select books by genre but also, delete, update and create new books. If any parameter is missing, the app won't let you add a new blank item.
+
+The genres, 
 
 Directives are camel-case for 'listBooks' we tag as
 ```html
