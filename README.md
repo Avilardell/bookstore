@@ -4,7 +4,7 @@ AngularJS app using directives
 
 Front-app test image:
 
-![Front app](https://github.com/Avilardell/bookstore/tree/master/assets/front-app.jpg "Fron app test")
+![Front app](https://github.com/Avilardell/bookstore/blob/master/assets/front-app.jpg?raw=true "Front app test")
 
 
 Directives are camel-case for 'listBooks' we tag as
