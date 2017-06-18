@@ -1,0 +1,22 @@
+{
+  "name": "bookstore",
+  "description": "AngularJS bookstore",
+  "main": "server.js",
+  "authors": [
+    "Albert Vilardell"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
