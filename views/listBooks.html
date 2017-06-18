@@ -1,0 +1,61 @@
+<div class="container" ng-controller="listBooks">
+		
+		
+		<form class="form-inline ">
+			
+			<input type="text" class="form-control" id="books" placeholder="Book title" ng-model="book.title">
+			
+			<select class="form-control" placeholder="Book genre" ng-model="book.genre">
+			  <option ng-repeat="genre in genres" value="{{genre.name}}">{{genre.name}}</option>
+			</select>
+			<input type="text" class="form-control" id="books" placeholder="Price" ng-model="book.price">
+			<button type="submit" class="btn btn-default" ng-click="addBook($event, book.title, book.genre, book.price)">Add book</button>
+			
+		</form>
+
+			
+		
+		<br>
+		<div class="panel panel-default">
+			<div class="panel-heading">Books listing
+			</div>
+			  
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Titile</th>
+						<th>Genre:
+						<select class="form-inline" placeholder="Book genre" ng-model="query">
+							  <option ng-repeat="genre in genres">{{genre.name}}</option>
+							</select>
+						</th>
+						<th>Price</th>
+						<th class="pull-right">Options</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="book in books | filter:query">
+						<td>
+							<label ng-click="editing=!editing" ng-show="!editing">{{book.title}}</label>
+							<input ng-model="book.title"  ng-show="editing" class="list-item"/>
+						</td>
+						<td>
+							<label ng-click="editing=!editing" ng-show="!editing">{{book.genre}}</label>
+							<select class="form-inline" placeholder="Book genre" ng-model="book.genre" ng-show="editing">
+							  <option ng-repeat="genre in genres">{{genre.name}}</option>
+							</select>
+						</td>
+						<td>
+							<label ng-click="editing=!editing" ng-show="!editing">{{book.price | currency:'€ ':2}}</label>
+							<input ng-model="book.price"  ng-show="editing" class="list-item"/>
+						</td>
+						<td>
+							<a  href="" class="pull-right btn btn-success" ng-click="editing=!editing">Edit</a>
+							<a ng-click="saveBook(book)" href="" class="pull-right btn btn-success">Save</a>
+							<a ng-click="deleteBook(book, $index)" href="" class="pull-right btn btn-danger">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>

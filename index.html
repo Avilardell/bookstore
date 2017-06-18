@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Bezzy bookstore</title>
+	<link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<script src="../../bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
+	<script src="./scripts/controllers/listBooks.js"></script>
+	<script src="./scripts/controllers/listGenres.js"></script>
+	<script src="./scripts/services/bookService.js"></script>
+	<script src="./scripts/services/genreService.js"></script>
+	<script src="./scripts/directives/listBooks.js"></script>
+	<script src="./scripts/directives/listGenres.js"></script>
+
+</head>
+<body ng-app="bookApp">
+	
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="/">
+	        <img alt="Bookstore" src="">
+	      </a>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="/books">Books</a></li>
+	      	<li><a href="/genres">Genres</a></li>
+	      </ul>
+	  </div>
+	</nav>
+	<list-books></list-books>
+	<list-genres></list-genres>
+</body>
+</html>

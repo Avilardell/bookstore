@@ -1,0 +1,37 @@
+[
+			{
+				"title": "The Martian",
+				"genre": "Science-fiction",
+				"price": 21
+			},
+			{
+				"title": "The Hunger Games 2",
+				"genre": "Science-fiction",
+				"price": 23.5
+			},
+			{
+				"title": "The Truth About Forever",
+				"genre": "Romance",
+				"price": 18
+			},
+			{
+				"title": "Lover Awakened",
+				"genre": "Suspense",
+				"price": 18
+			},
+			{
+				"title": "The Girl with the Dragon Tattoo",
+				"genre": "Thriller",
+				"price": 17
+			},
+			{
+				"title": "To Kill a Mokingbird",
+				"genre": "Classics",
+				"price": 22
+			},
+			{
+				"title": "The Giver",
+				"genre": "Classics",
+				"price": 18
+			}
+		]

@@ -1,0 +1,41 @@
+<div class="container" ng-controller="listGenres">
+		
+		<form class="form-inline ">
+			
+			<input type="text" class="form-control" id="genre" placeholder="Genre" ng-model="genre.name">
+			
+			<button type="submit" class="btn btn-default" ng-click="addGenre($event, genre.name)">Add genre</button>
+			
+		</form>
+
+			
+		
+		<br>
+		<div class="panel panel-default">
+			<div class="panel-heading">Genres available
+			</div>
+			  
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Genre</th>
+						<th class="pull-right">Options</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="genre in genres">
+						<td>
+							<label ng-click="editing=!editing" ng-show="!editing">{{genre.name}}</label>
+							<input ng-model="genre.name"  ng-show="editing" class="list-item"/>
+						</td>
+						<td>
+							<a  href="" class="pull-right btn btn-success" ng-click="editing=!editing">Edit</a>
+							<a ng-click="saveGenre(genre)" href="" class="pull-right btn btn-success">Save</a>
+							<a ng-click="deleteGenre($index, genre)" href="" class="pull-right btn btn-danger">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
