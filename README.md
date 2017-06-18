@@ -8,7 +8,7 @@ Front-app test image:
 
 You not only can select books by genre but also, delete, update and create new books. If any parameter is missing, the app won't let you add a new blank item.
 
-The genres, 
+The genres, also provide user with interaction to list and modify them and delete specific item by $index provided.
 
 Directives are camel-case for 'listBooks' we tag as
 ```html
